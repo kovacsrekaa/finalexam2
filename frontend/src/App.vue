@@ -51,8 +51,8 @@ const showCancelButton = computed(() => movies.value.length > 0 || searchPerform
     <main class="flex justify-center items-center py-16">
         <section class="card card-body max-w-[400px] bg-secondary">
             <h1 class="text-xl flex justify-center items-center mb-4"> Search by Movie genre or id: </h1>
-            <input v-model="genre" className="input w-full max-w-xs" type="string" placeholder="Search by genre">
-            <input v-model="id" className="input w-full max-w-xs" type="string" placeholder="Search by id">
+            <input v-model="genre" className="input w-full max-w-xs" type="text" placeholder="Search by genre">
+            <input v-model="id" className="input w-full max-w-xs" type="text" placeholder="Search by id">
             <button class="btn btn-primary  w-full max-w-xs" @click="handleMovies()">Search</button>
             <div v-if="showCancelButton">
                 <button class="btn btn-accent w-full max-w-xs" @click="cancel()">Cancel</button>
